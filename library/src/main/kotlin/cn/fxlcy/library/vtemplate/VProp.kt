@@ -1,4 +1,4 @@
-package vtemplate
+package cn.fxlcy.library.vtemplate
 
 import android.view.ViewGroup
 
@@ -20,11 +20,3 @@ var ViewGroup.padRight: Int
 var ViewGroup.padBottom: Int
     get() = paddingBottom
     set(value) = setPadding(paddingLeft, paddingTop, paddingRight, value)
-
-var ViewGroup.MATCH_PARENT: Int
-    get() = ViewGroup.LayoutParams.MATCH_PARENT
-    set(value) = throw RuntimeException("不能set")
-
-var ViewGroup.WRAP_CONTENT: Int
-    get() = ViewGroup.LayoutParams.WRAP_CONTENT
-    set(value) = throw RuntimeException("不能set")
